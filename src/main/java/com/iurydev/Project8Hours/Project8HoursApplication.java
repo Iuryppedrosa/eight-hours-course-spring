@@ -10,7 +10,7 @@ public class Project8HoursApplication {
 	public static void main(String[] args) {
 		var ctx = SpringApplication.run(Project8HoursApplication.class, args);
 
-		MyFirstClass myFirstClass = ctx.getBean(MyFirstClass.class);
-		System.out.println(myFirstClass.hello());
+		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
+		System.out.println(myFirstService.tellAsStory());
 	}
 }
