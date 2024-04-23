@@ -16,16 +16,17 @@ public class MyFirstService {
     @Autowired
     private final MyFirstClass myFirstClass;
 
+    @Value("${my.custom.property}")
+    private String customProperty;
 
     @Value("${my.prop}")
     private String customPropertyFromAnotherFile;
 
-
     @Value("${my.prop.2}")
     private String customPropertyFromAnotherFile2;
 
-    @Value("123")
-    private Integer cumstomPropertyInt;
+    @Value("${my.custom.property.int}")
+    private Integer customPropertyInt;
 
     public MyFirstService(MyFirstClass myFirstClass){
         this.myFirstClass = myFirstClass;
@@ -40,6 +41,13 @@ public class MyFirstService {
     }
     public String getCustomPropertyFromAnotherFile2() {
         return customPropertyFromAnotherFile2;
+    }
+
+    public String getCustomProperty() {
+        return customProperty;
+    }
+    public Integer getCustomPropertyInt() {
+        return customPropertyInt;
     }
 
 }

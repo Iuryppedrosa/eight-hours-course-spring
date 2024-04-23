@@ -12,6 +12,8 @@ public class Project8HoursApplication {
 
 		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
 		System.out.println(myFirstService.tellAsStory());
+		System.out.println(myFirstService.getCustomProperty());
+		System.out.println(myFirstService.getCustomPropertyInt());
 		System.out.println(myFirstService.getCustomPropertyFromAnotherFile());
 		System.out.println(myFirstService.getCustomPropertyFromAnotherFile2());
 	}
