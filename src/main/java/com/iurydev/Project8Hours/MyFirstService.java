@@ -28,6 +28,7 @@ public class MyFirstService {
     @Value("${my.custom.property.int}")
     private Integer customPropertyInt;
 
+
     public MyFirstService(MyFirstClass myFirstClass){
         this.myFirstClass = myFirstClass;
     }
