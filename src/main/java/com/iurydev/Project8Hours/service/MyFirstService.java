@@ -1,6 +1,6 @@
-package com.iurydev.Project8Hours;
+package com.iurydev.Project8Hours.service;
+import com.iurydev.Project8Hours.entities.MyFirstClass;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;

@@ -1,4 +1,4 @@
-package com.iurydev.Project8Hours;
+package com.iurydev.Project8Hours.entities;
 
 public class MyFirstClass {
 
